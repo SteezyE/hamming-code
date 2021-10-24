@@ -61,7 +61,7 @@ vector<vector<bool>> generator_mat(vector<vector<bool>> C)
 		for(int i=0; i<l; ++i)
 			G[i][j] = C[j-l][i];
 
-	while(moves.size())
+	while(!moves.empty())
 	{
 		swap_col(G,moves.back());
 		moves.pop_back();
